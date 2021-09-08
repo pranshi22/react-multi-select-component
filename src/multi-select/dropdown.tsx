@@ -29,6 +29,8 @@ const Dropdown = () => {
     isOpen,
     defaultIsOpen,
     ClearSelectedIcon,
+    panelClassName,
+    actionButtons =<> </>
   } = useMultiSelect();
 
   const [isInternalExpand, setIsInternalExpand] = useState(true);
@@ -134,8 +136,9 @@ const Dropdown = () => {
       </div>
       {expanded && (
         <div className="dropdown-content">
-          <div className="panel-content">
+          <div className={`panel-content ${panelClassName}`}>
             <SelectPanel />
+            {actionButtons}
           </div>
         </div>
       )}

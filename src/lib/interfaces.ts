@@ -35,4 +35,6 @@ export interface ISelectProps {
   isOpen?: boolean;
   isCreatable?: boolean;
   onCreateOption?;
+  panelClassName;
+  actionButtons: JSX.Element;
 }
