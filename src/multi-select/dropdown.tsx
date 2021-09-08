@@ -29,7 +29,6 @@ const Dropdown = () => {
     isOpen,
     defaultIsOpen,
     ClearSelectedIcon,
-    panelClassName,
     actionButtons =<> </>
   } = useMultiSelect();
 
@@ -136,7 +135,7 @@ const Dropdown = () => {
       </div>
       {expanded && (
         <div className="dropdown-content">
-          <div className={`panel-content ${panelClassName}`}>
+          <div className="panel-content">
             <SelectPanel />
             {actionButtons}
           </div>
